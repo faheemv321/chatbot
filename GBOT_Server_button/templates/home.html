@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="css/chat_interface1.css") }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="css/temporary.css") }}">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Open+Sans:300|Oxygen|Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="chat_window">
+                <ul class="messages"></ul>
+                <div class="bottom_wrapper clearfix">
+                    <div class="message_input_wrapper">
+                        <input id="msg_input" class="message_input" placeholder="Say Hi to begin chat..." />
+                    </div>
+                    <div class="send_message">
+                        <div class="doc">
+                         <div class="text">
+                             <span class=" 	glyphicon glyphicon-send"></span>
+                         </div>
+                        </div>
+                    </div>
+                    <div class="record_message">
+                            <div class="audio">
+                                    <!-- <img src="/static/mic1.png" width="50px" height="50px" id="start-record-btn"> -->
+                                   <!-- <button type="button" id="start-record-btn" > -->
+                                           <!-- <span class="glyphicon glyphicon-record"></span> -->
+                                         <!-- </button>  -->
+                                         <input type="image" src="static/mic1.png" id="start-record-btn"/>
+                           
+                                <input type="image" src="static/mic2.png" id="stop-record-btn"/>
+                                <!-- <img src="/static/mic2.png" width="50px" height="50px" id="stop-record-btn"> -->
+                               <!--<button type="button" class="btn btn-info">
+                                       <span class="glyphicon glyphicon-record"></span>
+                                     </button>--> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message_template">
+                <li class="message">
+                    <div class="avatar"></div>
+                    <div class="text_wrapper">
+                        <div class="text"></div>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block other_footers %}
+<script src="{{ url_for('static', filename="js/bindtrial.js") }}"></script>
+{% endblock %}
+

@@ -1,0 +1,24 @@
+language: en
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: CRFEntityExtractor
+- name: EntitySynonymMapper
+- name: CountVectorsFeaturizer
+- name: EmbeddingIntentClassifier
+policies:
+- name: "FallbackPolicy"
+  nlu_threshold: 0.6
+  core_threshold: 0.6
+  fallback_action_name: 'utter_fallback's
+- name: EmbeddingPolicy
+  epochs: 701
+  attn_shift_range: 5
+  featurizer:
+  - name: FullDialogueTrackerFeaturizer
+    state_featurizer:
+    - name: LabelTokenizerSingleStateFeaturizer
+- name: AugmentedMemoizationPolicy
+- name: MappingPolicy
+
+

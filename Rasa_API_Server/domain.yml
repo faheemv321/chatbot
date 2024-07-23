@@ -1,0 +1,395 @@
+intents:
+- affirm
+- bot-intro
+- deny
+- documents-for-gst-registration
+- goodbye
+- goods-with-given-rate
+- greet
+- gst-E-way-bill-intro
+- gst-E-way-bill-when-applicable
+- gst-basic-info
+- gst-benefits-info
+- gst-business-payment-method
+- gst-documents-format
+- gst-exempt
+- gst-import-export-info
+- gst-imprisonment-circumstances
+- gst-late-filing-penalty
+- gst-mandatory-registration-category
+- gst-payment-calculation
+- gst-rate-of-product
+- gst-rate-of-services
+- gst-refund-claim
+- gst-registration-cancellation-by-officer
+- gst-registration-cancellation-circumstances
+- gst-registration-cancellation-online
+- gst-registration-eligibility
+- gst-registration-process
+- gst-registration-status-check
+- gst-scheme-advantages
+- gst-scheme-deadline
+- gst-scheme-disadvantages
+- gst-scheme-ineligible-info
+- gst-scheme-intro
+- gst-scheme-rates
+- gst-scheme-return-filing-info
+- gst-scheme-rules
+- gst-type-full-form
+- gst-type-intro
+- mood-great
+- reference-number-in-E-way-bill
+entities:
+- benefit-category
+- goods/services
+- gst-type
+- import/export
+- product
+- rate
+- scheme
+- service
+templates:
+  utter_affirm:
+  - text: I am happy for you!!
+  utter_great_mood:
+  - text: I feel great today
+  utter_sorry:
+  - text: I apologise for the mistake
+  - text: I am sorry for that
+  - text: Sorry
+  - text: I am sorry
+  utter_affirm_goodbye:
+  - text: are you leaving already
+  - text: do you really want to stop
+  utter_welcome:
+  - text: you are welcome
+  utter_fallback:
+  - text: sorry, I didn't  get that.
+  utter_greet:
+  - text: Hey! How are you?
+  - text: Hello!
+  - text: Hey, how can I help you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great carry on!
+  - text: carry on
+  - text: glad you got it!
+  utter_goodbye:
+  - text: Bye
+  - text: hope you enjoyed your time!
+  utter_bot_intro:
+  - text: This is a GST FAQ bot. One stop-shop to all your GST related queries
+  utter_gst_basic_info:
+  - text: Goods and Service Tax (GST) is a destination based tax on consumption of
+      goods and services.
+  utter_gst_18_goods:
+  - text: AC hotels that serve liquor, telecom services, IT services, flavored refined
+      sugar, pasta, cornflakes, pastries and cakes
+  utter_gst_28_goods:
+  - text: 5-star hotels, race club betting,wafers coated with chocolate, pan masala
+      and aerated water
+  utter_gst_12_goods:
+  - text: Non-AC hotels, business class air ticket, frozen meat products, butter,
+      cheese, ghee, dry fruits in packaged form, animal fat, sausage, fruit juices,
+      namkeen and ketchup
+  utter_gst_5_goods:
+  - text: railways, air travel, branded paneer, frozen vegetables, coffee, tea, spices,
+      kerosene, coal, medicines
+  utter_gst_exempt_goods:
+  - text: milk, butter milk, curd, natural honey, fresh fruits and vegetables, flour,
+      besan
+  utter_gst_exempt_services:
+  - text: Services by the Reserve Bank of India, services by a foreign diplomatic
+      mission located in India,education, Transmission or distribution of electricity,
+      etc.
+  utter_grain_rate:
+  - text: Wheat,rice,oats,barley,corn,grain sorghum,rye put up in unit container and
+      bearing a registered brand name, bear 5% GST.
+  utter_gst_composition_scheme:
+  - text: Composition Scheme under GST is a relief mechanism, especially for small
+      tax payers, wherein they have comparatively less tedious compliance practices
+      to deal with, but also pay GST at a lower, fixed composition tax rate on their
+      turnover.
+  utter_gst_composition_scheme_ineligible:
+  - text: Taxpayer supplying Exempt supplies, Supplier of services other than restaurant
+      related services, Manufacturer of ice cream, pan masala, or tobacco, Casual
+      Taxable Person or a Non-resident Taxable Person, Businesses which supply goods
+      through an e-commerce operator
+  utter_gst_composition_scheme_rules:
+  - text: No Input Tax Credit can be claimed, No Inter-state supply of goods can be
+      done, No GST exempted goods can be supplied, ax need to be paid at normal GST
+      rates for transactions under Reverse Charge Mechanism, Services worth up to
+      INR 5 Lakh can be supplied under the scheme, by a taxable person who is also
+      supplying goods ,'composition taxable person' must be displayed prominently
+      on every bill of supply which is issued
+  utter_gst_composition_scheme_deadline:
+  - text: The composition scheme registration, should be done at the beginning of
+      every financial year, for which a dealer wants to opt for the composition scheme.
+      In other words the GST composition scheme last date for the next year will be
+      31st of March of the previous financial year.
+  utter_gst_composition_scheme_rates:
+  - text: "The GST Composition Scheme Rate is a standard lower rate of tax, which\
+      \ is specified as follows-  Manufacturer & Traders of Goods 1%, Restaurants\
+      \ not serving alcohol for human consumption \t5%"
+  utter_gst_composition_scheme_return_info:
+  - text: A composition scheme dealer is required to file a quarterly return i.e.
+      Form GSTR-4 by the 18th of the month after the end of the quarter. Also, an
+      annual return i.e. Form GSTR-9A has to be filed by the 31st of December of the
+      next financial year.
+  utter_gst_composition_scheme_advantages:
+  - text: Advantages of composition scheme are Lesser compliance activity, Limited
+      tax liability, High cash liquidity as the composition scheme rate under GST
+      is lower compared to the usual GST rates
+  utter_gst_composition_scheme_disadvantages:
+  - text: Disadvantages of composition scheme are Not allowed to carry out inter-state
+      transactions, Not eligible to collect tax from customers and not eligible to
+      claim Input Tax Credit, Not eligible to supply exempt goods, Not eligible to
+      drive business on e-commerce
+  utter_gst_late_filing_penalty:
+  - text: The GST penalty for late filing is INR 100 for every day during which the
+      failure continues, subject to a maximum of INR 5,000
+  utter_gst_cancellation_circumstances:
+  - text: A person does not account for the goods on which he is liable to pay tax,  supplies
+      or receives goods in breach of any provisions or rules with the intent to evade
+      payment of tax,supplies any goods liable to tax without having applied for registration,  uses
+      a conveyance for carriage of taxable goods in breach of any provisions or rules
+  utter_imprisonment_circumstances:
+  - text: Obstructing or preventing any officer in the discharge of his duties, or
+      tampering with or destroying any evidence or documents, Failure to supply any
+      information required under the law or supplying false information, Tax evaded
+      or input tax credit wrongly availed or refund wrongly taken
+  utter_cgst_full_form:
+  - text: Full form of CGST is Central Goods and Service Tax
+  utter_sgst_full_form:
+  - text: Full form of SGST is State Goods and Service Tax
+  utter_igst_full_form:
+  - text: Full form of IGST is Integrated Goods and Service Tax
+  utter_cgst_intro:
+  - text: CGST is a tax levied on Intra State supplies of both goods and services
+      by the Central Government and will be governed by the CGST Act.
+  utter_sgst_intro:
+  - text: SGST is a tax levied on Intra State supplies of both goods and services
+      by the State Government and will be governed by the SGST Act.
+  utter_igst_intro:
+  - text: IGST is a tax levied on all Inter-State supplies of goods and/or services
+      and will be governed by the IGST Act. IGST will be applicable on any supply
+      of goods and/or services in both cases of import into India and export from
+      India.
+  utter_gst_cancellation_by_officer:
+  - text: A notice in Form GST REG-16 will be issued to the taxable person to show
+      cause Within 7 days, the taxable person need to respond to the notice as Why
+      his registration should not be cancelled in Form GST REG 17 If the reply is
+      found to be satisfactory, the officer will drop the cancellation proceedings
+      by issuing an order in Form GST REG-19. If the details are not satisfactory,
+      the officer will issue an order in Form GST REG 18 for cancelling the registration
+      within 30 days from the date of show cause
+  utter_gst_registration_documents:
+  - text: PAN Card, Contact details, Proof of Place of business, Valid bank account
+      number, List of Goods and Services, Proof of appointment of authorised Signatory,
+      Incorporation certificate, Other regulatory registration details such as Professional
+      Tax, State Excise License details
+  utter_gst_registration_document_format:
+  - text: JPEG or PDF format
+  utter_mandatory_gst_registration_category:
+  - text: Taxable person carrying on interstate supplies, Casual and non-resident
+      taxable persons, Businesses liable to pay tax under reverse charge, Agents supplying
+      on behalf of a taxable person, Input service distributor, Sellers on e-commerce
+      platforms, All e-commerce operators, Person supplying online information and
+      database access or retrieval services from outside India to an unregistered
+      person in India, Persons responsible to deduct TDS
+  utter_gst_registration_cancellation_online:
+  - text: A registered taxable person seeking cancellation of registration, should
+      submit Form GST REG-14 along with details of closing stock (Inputs, Semi finished
+      goods, finished goods and capital goods), tax liability and tax payment along
+      with relevant documents within 30 days. A taxable person who has voluntarily
+      registered is allowed to apply for cancellation only after completion of 1 year
+      of registration.
+  utter_gst_registration_eligibility:
+  - text: The threshold limit for turnover beyond which a taxable person will be liable
+      to apply for GST registration is INR 10 lakhs for Special category states (Arunachal
+      Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura, Himachal
+      Pradesh and Uttarakhand),20 lakhs for rest of India
+  utter_gst_registration_procedure:
+  - text: access the common GST portal and enrol by validating e-mail ID and Mobile
+      Number.Then, a dealer will be allotted with a provisional certificate of registration
+      inForm GST REG-25.Within 3 months, dealers are required to submitForm GST REG-24
+      in the GST Portal along with information and GST registration documents as prescribed.
+      If the information provided is complete and satisfactory, final registration
+      certificate will be issued in Form GST REG-06.Otherwise,a show cause notice
+      will be issued in Form GST REG-27, and there will be hearing before cancelling
+      the provisional registration. If fails, or if the details are not provided within
+      the stipulated period, the provisional registration allotted in Form GST REG-25
+      will be cancelled by issuing an order in Form GST REG-26.
+  utter_gst_registration_status_check:
+  - text: You can check the status of the GST registration by using the ARN number
+      (Application Reference Number.)
+  utter_5:
+  - text: The GST on the queried item is 5%
+  utter_12:
+  - text: The GST on the queried item is 12%
+  utter_18:
+  - text: The GST on the queried item is 18%
+  utter_28:
+  - text: The GST on the queried item is 28%
+  utter_exempt:
+  - text: The queried item is exempt from gst
+  utter_3:
+  - text: The gst on the queried item is 3%
+  utter_0.25:
+  - text: The gst on the queried item is 0.25%
+  utter_essential:
+  - text: The gst on essential goods and services are 5%
+  utter_standard:
+  - text: Standard goods and services have both 12% and 18% gst
+  utter_luxury:
+  - text: The luxury goods and services have 28% gst
+  utter_gst_e_way_bill_intro:
+  - text: E-way bill stands for Electronic Way Bill. It is usually a unique bill number
+      generated for the specific consignment involving the movement of goods.
+  utter_when_applicable:
+  - text: It is applicable for any consignment value exceeding INR 50,000. Even in
+      case of inward supply of goods from unregistered person, E-Way Bill is applicable.
+  utter_gst_reference_number_E_way_bill:
+  - text: Upon generation of the E-Way Bill, on the common portal, a unique E-Way
+      Bill number called ‘EBN’ will be made available to the supplier, the recipient
+      and the transporter.
+  utter_gst_payment_calculate:
+  - text: Under GST the tax to be paid is mainly divided into 3 categories.They are
+      IGST To be paid when interstate supply is made (paid to center),CGST – To be
+      paid when making supply within the state (paid to center),SGST – To be paid
+      when making supply within the state (paid to state).Usually, th input tax credit
+       should be reduced from Outward Tax Liability to calculate the total GST payment
+      to be made.The way the calculation is to be done is different for different
+      types of dealers 
+  utter_gst_business_payment_method:
+  - text: Gst payment can be done in two ways,they are Payment through Credit Ledger,
+      payment through cash Ledger.GST payment is to be made when the GSTR 3 is filed
+      i.e by 20th of the next month.
+  utter_gst_refund_claim:
+  - text: The refund application has to be made in Form RFD 01 within 2 years from
+      relevant date.The form should also be certified by a Chartered Accountant. You
+      can file your returns very easily using ClearTax GST Software.Some cases when
+      refund can be claimed are Dealer Exports (including deemed export) goods/services
+      under claim of rebate or Refund,Tax Refund for International Tourists.The time
+      limit for claiming a refund is 2 years from relevant date.
+  utter_gst_import:
+  - text: Imports of Goods and Services will be treated as inter-state supplies and
+      IGST will be levied on import of goods and services into the country. The incidence
+      of tax will follow the destination principle and the tax revenue in case of
+      SGST will accrue to the State where the imported goods and services are consumed.
+      Full and complete set-off will be available on the GST paid on import on goods
+      and services
+  utter_gst_export:
+  - text: Exports will be treated as zero rated supplies. No tax will be payable on
+      exports of goods or services, however credit of input tax credit will be available
+      and same will be available as refund to the exporters. The Exporter will have
+      an option to either pay tax on the output and claim refund of IGST or export
+      under Bond without payment of IGST and claim refund of Input Tax Credi
+  utter_gst_benefits_general:
+  - text: GST consumes more than a dozen taxes, thus making it hassle free and efficient.
+  - text: Elimination of Cascading Effect of Taxes,Seamless flow of Input Tax Credit,Common
+      Market,Bett,Technology led Law er Days for Under Developed States ,
+  utter_gst_benefits_goverment:
+  - text: benefits forgovernment  include simple and easy to administer, better control
+      on leakage,  higher revenue efficiency, etc
+  utter_gst_benefits_business:
+  - text: The Goods and Services Tax would benefit the industry most. That is why
+      the industry was demanding it for a long time. A study tells that Because of
+      the GST, the industry would grow rapidly.
+  utter_gst_benefits_consumer:
+  - text: Benefits of GST for consumers are :- Reduction in price of goods and services,
+       Uniform prices throughout the country, Trust in Simpler Tax System and Better
+      accessibility of goods and services
+  utter_under_developed_states:
+  - text: GST being a consumption based, destination based tax, it will provide a
+      huge boost to consumption heavy states, who can now utilize the revenue jump
+      to focus on industrialization and manufacturing.ill not be required to use HSN
+      codes
+  utter_gst_benefits_country:
+  - text: Introduction of GST would be a very significant step in the field of indirect
+      tax reforms in India. By amalgamating a large number of Central and State taxes
+      into a single tax and allowing set-off of prior-stage taxes, it would mitigate
+      the ill effects of cascading and pave the way for a common national market.
+  utter_gst_benefits_market:
+  - text: GST will effectively dissolve state boundaries, as the same tax rate prevails
+      across the entire country. Also the removal of Central Sales Tax and the removal
+      of VAT will mean that the entire country will become a level playing ground
+      for all businesses.
+  utter_gst_benefits_small_taxpayers:
+  - text: Tax payers with an aggregate turnover in a financial year up to Rs.20 lakhs
+      and Rs.10 Lakhs for NE and special category states would be exempt from tax.
+      Further, a person whose aggregate turnover in the preceding financial year is
+      less than Rs.75 Lakhs can opt for a simplified composition scheme where tax
+      will payable at a concessional rate on the turnover in a state.
+actions:
+- utter_0.25
+- utter_12
+- utter_18
+- utter_28
+- utter_3
+- utter_5
+- utter_affirm
+- utter_affirm_goodbye
+- utter_bot_intro
+- utter_cgst_full_form
+- utter_cgst_intro
+- utter_did_that_help
+- utter_essential
+- utter_exempt
+- utter_fallback
+- utter_goodbye
+- utter_grain_rate
+- utter_great_mood
+- utter_greet
+- utter_gst_12_goods
+- utter_gst_18_goods
+- utter_gst_28_goods
+- utter_gst_5_goods
+- utter_gst_basic_info
+- utter_gst_benefits_business
+- utter_gst_benefits_consumer
+- utter_gst_benefits_country
+- utter_gst_benefits_general
+- utter_gst_benefits_goverment
+- utter_gst_benefits_market
+- utter_gst_benefits_small_taxpayers
+- utter_gst_business_payment_method
+- utter_gst_cancellation_by_officer
+- utter_gst_cancellation_circumstances
+- utter_gst_composition_scheme
+- utter_gst_composition_scheme_advantages
+- utter_gst_composition_scheme_deadline
+- utter_gst_composition_scheme_disadvantages
+- utter_gst_composition_scheme_ineligible
+- utter_gst_composition_scheme_rates
+- utter_gst_composition_scheme_return_info
+- utter_gst_composition_scheme_rules
+- utter_gst_e_way_bill_intro
+- utter_gst_exempt_goods
+- utter_gst_exempt_services
+- utter_gst_export
+- utter_gst_import
+- utter_gst_late_filing_penalty
+- utter_gst_payment_calculate
+- utter_gst_reference_number_E_way_bill
+- utter_gst_refund_claim
+- utter_gst_registration_cancellation_online
+- utter_gst_registration_document_format
+- utter_gst_registration_documents
+- utter_gst_registration_eligibility
+- utter_gst_registration_procedure
+- utter_gst_registration_status_check
+- utter_happy
+- utter_igst_full_form
+- utter_igst_intro
+- utter_imprisonment_circumstances
+- utter_luxury
+- utter_mandatory_gst_registration_category
+- utter_sgst_full_form
+- utter_sgst_intro
+- utter_sorry
+- utter_standard
+- utter_under_developed_states
+- utter_welcome
+- utter_when_applicable
